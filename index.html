@@ -3,143 +3,564 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vireston - Cyberbezpieczeństwo &amp; Bezpieczeństwo IT</title>
+<title>Vireston — Cyberbezpieczeństwo, SZBI, KSC/NIS2 i audyty ISO 27001</title>
+<meta name="description" content="Vireston: audyty ISO 27001, wdrożenie SZBI, przygotowanie do nowej ustawy o KSC (NIS2), wdrożenia zabezpieczeń, reagowanie na incydenty oraz szkolenia i budowanie świadomości dla firm i instytucji. Realizacja zdalnie w całej Polsce.">
+<link rel="canonical" href="https://vireston.pl/">
+<meta name="theme-color" content="#0a0e12">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pl_PL">
+<meta property="og:site_name" content="Vireston">
+<meta property="og:url" content="https://vireston.pl/">
+<meta property="og:title" content="Vireston — Cyberbezpieczeństwo, SZBI i KSC/NIS2 dla firm">
+<meta property="og:description" content="Audyty ISO 27001, wdrożenie SZBI, przygotowanie do KSC/NIS2, wdrożenia zabezpieczeń i szkolenia dla firm i instytucji.">
+<meta property="og:image" content="https://vireston.pl/img/logo/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="img/logo/vireston-avatar.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
+<script>document.documentElement.classList.add('js');</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Vireston",
+  "url": "https://vireston.pl/",
+  "logo": "https://vireston.pl/img/logo/vireston-avatar.png",
+  "image": "https://vireston.pl/img/profile/author-imagee2.jpeg",
+  "description": "Audyty ISO 27001, wdrożenie SZBI, przygotowanie do KSC/NIS2, wdrożenia zabezpieczeń, reagowanie na incydenty i szkolenia z cyberbezpieczeństwa.",
+  "areaServed": "PL",
+  "sameAs": ["https://www.linkedin.com/in/danczewski/"],
+  "founder": {
+    "@type": "Person",
+    "name": "Olek Danczewski",
+    "jobTitle": "Założyciel, audytor ISO/IEC 27001",
+    "sameAs": ["https://www.linkedin.com/in/danczewski/"]
+  },
+  "knowsAbout": ["ISO 27001", "SZBI", "KSC", "NIS2", "Security Operations", "SIEM", "EDR", "XDR", "Incident Response", "Cloud Security", "Security Awareness"]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "Czy moja firma podlega nowej ustawie o KSC?", "acceptedAnswer": {"@type": "Answer", "text": "Ustawa obejmuje podmioty kluczowe i ważne z sektorów wymienionych w jej załącznikach — zwykle średnie i duże firmy (od 50 osób lub powyżej 10 mln euro obrotu), a w niektórych sektorach niezależnie od wielkości. Obowiązek ustalenia, czy ustawa Cię dotyczy, spoczywa na samej firmie."}},
+    {"@type": "Question", "name": "Czym jest SZBI i czy muszę mieć certyfikat ISO 27001?", "acceptedAnswer": {"@type": "Answer", "text": "SZBI to system zarządzania bezpieczeństwem informacji: polityki, analiza ryzyka, procedury i nadzór. Ustawa o KSC wymaga jego wdrożenia, ale nie wymaga certyfikatu ISO 27001. Norma jest jednak najlepszym wzorcem i ułatwia późniejszą certyfikację."}},
+    {"@type": "Question", "name": "Ile kosztuje współpraca?", "acceptedAnswer": {"@type": "Answer", "text": "Każdy projekt wyceniam indywidualnie. Po pierwszej rozmowie dostajesz konkretną, stałą wycenę."}}
+  ]
+}
+</script>
 </head>
 <body>
 
-<header>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="vlogo" viewBox="0 0 64 64">
+    <g fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">
+      <path d="M46 10.2L32 2 8 16v32l24 14 24-14V26"/>
+      <path d="M18 20l14 28 20-38"/>
+    </g>
+    <circle cx="56.5" cy="4.5" r="3.2" fill="currentColor"/>
+  </symbol>
+  <symbol id="i-linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.95v5.66H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.13 2.06 2.06 0 010 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></symbol>
+</svg>
+
+<a href="#main" class="skip">Przejdź do treści</a>
+
+<header class="site-header">
   <div class="wrap">
-    <nav>
-      <div class="logo"><span class="mark"></span>VIRESTON</div>
-      <div class="navlinks">
+    <nav aria-label="Główna nawigacja">
+      <a href="index.html" class="logo" aria-label="Vireston — strona główna"><svg class="logo-mark" aria-hidden="true"><use href="#vlogo"/></svg>VIRESTON</a>
+      <div class="navlinks" id="navlinks">
         <a href="#uslugi">Usługi</a>
+        <a href="#ksc">KSC / NIS2</a>
         <a href="#o-mnie">O mnie</a>
         <a href="certyfikaty.html">Certyfikaty</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#kontakt">Kontakt</a>
+        <a href="#faq">FAQ</a>
+        <a href="https://www.linkedin.com/in/danczewski/" target="_blank" rel="noopener" class="nav-li" aria-label="LinkedIn"><svg aria-hidden="true"><use href="#i-linkedin"/></svg><span>LinkedIn</span></a>
+        <a href="incydent.html" class="nav-incident-mobile"><span class="dot pulse"></span>Zgłoś incydent</a>
+        <a href="#kontakt" class="nav-cta-mobile" data-topic="Ocena bezpieczeństwa">Zamów ocenę bezpieczeństwa →</a>
       </div>
-      <a href="#kontakt" class="nav-cta">Skontaktuj się →</a>
-      <button class="burger"><span></span><span></span><span></span></button>
+      <div class="nav-actions">
+        <a href="incydent.html" class="nav-incident"><span class="dot pulse"></span>Zgłoś incydent</a>
+        <a href="#kontakt" class="nav-cta" data-topic="Ocena bezpieczeństwa">Zamów ocenę →</a>
+      </div>
+      <button class="burger" aria-label="Otwórz menu" aria-expanded="false" aria-controls="navlinks"><span></span><span></span><span></span></button>
     </nav>
   </div>
 </header>
 
-<section class="hero" style="border-bottom:1px solid var(--border);">
-  <div class="wrap hero-inner">
-    <div class="eyebrow">
-      <span class="status-tag green"><span class="dot"></span>Dostępność: nowe zlecenia B2B</span>
+<main id="main">
+
+<!-- ========== HERO ========== -->
+<section class="hero">
+  <div class="hero-grid-bg" aria-hidden="true"></div>
+  <div class="wrap hero-layout">
+    <div class="hero-copy">
+      <div class="eyebrow">
+        <span class="status-tag green"><span class="dot pulse"></span>Przyjmuję nowe projekty</span>
+      </div>
+      <h1>Bezpieczeństwo IT<br>Twojej firmy —<br><span class="accent">bez zgadywania.</span></h1>
+      <p class="lead">Audyty ISO 27001, wdrożenie SZBI, przygotowanie do nowej ustawy o KSC, wdrożenia zabezpieczeń i szkolenia. Dostajesz konkretny obraz ryzyka, plan działań i wsparcie w jego realizacji.</p>
+      <div class="hero-ctas">
+        <a href="#kontakt" class="btn btn-primary" data-topic="Ocena bezpieczeństwa">Zamów ocenę bezpieczeństwa</a>
+        <a href="#ksc-check" class="btn btn-ghost">Czy KSC mnie dotyczy?</a>
+      </div>
+      <ul class="hero-trust">
+        <li><span class="check" aria-hidden="true">✓</span>Audytor ISO/IEC 27001</li>
+        <li><span class="check" aria-hidden="true">✓</span>45+ certyfikatów branżowych</li>
+        <li><span class="check" aria-hidden="true">✓</span>Członek (ISC)² Poland i ISSA Polska</li>
+      </ul>
     </div>
-    <h1>Bezpieczeństwo IT<br>i cyberbezpieczeństwo<br><span>bez zgadywania.</span></h1>
-    <p class="lead">Audyty zgodne z ISO 27001, wdrażanie i konfiguracja zabezpieczeń oraz szkolenia z cyberbezpieczeństwa dla firm, które nie mogą pozwolić sobie na niespodzianki. Współpraca w modelu B2B — projektowo lub na stałe.</p>
-    <div class="hero-ctas">
-      <a href="#kontakt" class="btn btn-primary">Umów konsultację</a>
-      <a href="#uslugi" class="btn btn-ghost">Zobacz usługi</a>
-    </div>
-    <div class="hero-strip">
-      <div class="strip-item"><div class="num">ISO 27001</div><div class="label">Audyt bezpieczeństwa</div></div>
-      <div class="strip-item"><div class="num">Wdrożenia</div><div class="label">Konfiguracja i integracja</div></div>
-      <div class="strip-item"><div class="num">Szkolenia</div><div class="label">Warsztaty i edukacja</div></div>
+
+    <figure class="terminal">
+      <div class="term-bar">
+        <span class="term-tab active">spray-to-compromise.yml</span>
+        <span class="term-tab">spray_wiele_kont.yml</span>
+        <span class="term-title">Sigma</span>
+      </div>
+      <div class="term-body" aria-label="Reguła korelacyjna Sigma: password spraying zakończony udanym logowaniem">
+        <div class="tl"><span class="ln">1</span><span class="kw">title</span><span class="op">:</span> Password spray → przejęcie konta</div>
+        <div class="tl"><span class="ln">2</span><span class="kw">status</span><span class="op">:</span> <span class="fn">stable</span></div>
+        <div class="tl"><span class="ln">3</span><span class="kw">level</span><span class="op">:</span> <span class="sevtxt">high</span></div>
+        <div class="tl"><span class="ln">4</span><span class="kw">tags</span><span class="op">:</span></div>
+        <div class="tl"><span class="ln">5</span>  <span class="op">-</span> <span class="str">attack.credential-access</span></div>
+        <div class="tl"><span class="ln">6</span>  <span class="op">-</span> <span class="str">attack.t1110.003</span>        <span class="cm"># Password Spraying</span></div>
+        <div class="tl"><span class="ln">7</span>  <span class="op">-</span> <span class="str">attack.t1078</span>            <span class="cm"># Valid Accounts</span></div>
+        <div class="tl"><span class="ln">8</span><span class="kw">correlation</span><span class="op">:</span></div>
+        <div class="tl"><span class="ln">9</span>  <span class="kw">type</span><span class="op">:</span> <span class="fn">temporal_ordered</span></div>
+        <div class="tl"><span class="ln">10</span>  <span class="kw">rules</span><span class="op">:</span></div>
+        <div class="tl"><span class="ln">11</span>    <span class="op">-</span> spray_wiele_kont         <span class="cm"># ≥ 10 kont z 1 IP</span></div>
+        <div class="tl"><span class="ln">12</span>    <span class="op">-</span> udane_logowanie</div>
+        <div class="tl"><span class="ln">13</span>  <span class="kw">group-by</span><span class="op">:</span> [<span class="tb">IpAddress</span>]</div>
+        <div class="tl"><span class="ln">14</span>  <span class="kw">timespan</span><span class="op">:</span> <span class="num">1h</span></div>
+      </div>
+      <figcaption class="pipeline" aria-label="Architektura: jedna reguła, wiele platform">
+        <span class="node">Sigma<small>jedna reguła</small></span>
+        <span class="arrow" aria-hidden="true"></span>
+        <span class="node">pySigma<small>konwersja</small></span>
+        <span class="arrow" aria-hidden="true"></span>
+        <span class="node">SIEM<small>KQL · SPL</small></span>
+        <span class="arrow" aria-hidden="true"></span>
+        <span class="node act">SOAR<small>blokada konta</small></span>
+      </figcaption>
+    </figure>
+  </div>
+  <div class="wrap">
+    <div class="frameworks">
+      <span class="fw-label">Pracuję w oparciu o</span>
+      <span>ISO/IEC 27001</span><span>KSC / NIS2</span><span>NIST CSF</span><span>CIS Controls</span><span>MITRE ATT&amp;CK</span><span>RODO</span>
     </div>
   </div>
 </section>
 
+<!-- ========== TECH STRIP ========== -->
+<div class="tech-strip" aria-label="Platformy, z którymi pracuję">
+  <div class="wrap">
+    <p class="tech-label">Platformy, z którymi pracuję na co dzień</p>
+  </div>
+  <div class="marquee">
+    <div class="marquee-track">
+      <span>Microsoft Security</span><span>Fortinet</span><span>Palo Alto Networks</span><span>CrowdStrike</span><span>Trend Micro</span><span>TXOne Networks</span><span>Splunk</span><span>Tenable</span><span>Rapid7</span><span>Wazuh</span>
+      <span aria-hidden="true">Microsoft Security</span><span aria-hidden="true">Fortinet</span><span aria-hidden="true">Palo Alto Networks</span><span aria-hidden="true">CrowdStrike</span><span aria-hidden="true">Trend Micro</span><span aria-hidden="true">TXOne Networks</span><span aria-hidden="true">Splunk</span><span aria-hidden="true">Tenable</span><span aria-hidden="true">Rapid7</span><span aria-hidden="true">Wazuh</span>
+    </div>
+  </div>
+</div>
+
+<!-- ========== PROBLEMY ========== -->
+<section id="dla-kogo">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="status-tag green"><span class="dot"></span>dla kogo</span>
+      <h2>Brzmi znajomo?</h2>
+      <p>Najczęstsze sytuacje, z którymi zgłaszają się firmy.</p>
+    </div>
+    <div class="pain-grid">
+      <div class="pain reveal">
+        <div class="pain-num">01</div>
+        <h3>Nowa ustawa o KSC — i nie wiadomo, od czego zacząć</h3>
+        <p>Trzeba ustalić, czy firma podlega przepisom, wdrożyć SZBI i przygotować się do audytu — a terminy już biegną.</p>
+      </div>
+      <div class="pain reveal">
+        <div class="pain-num">02</div>
+        <h3>Narzędzia są kupione, ale nikt ich naprawdę nie obsługuje</h3>
+        <p>EDR, SIEM czy firewall działają na ustawieniach domyślnych, a alerty spływają bez analizy.</p>
+      </div>
+      <div class="pain reveal">
+        <div class="pain-num">03</div>
+        <h3>Pracownicy są najsłabszym ogniwem</h3>
+        <p>Jeden kliknięty link w phishingu wystarczy. Zespół potrzebuje praktycznej wiedzy, a nie kolejnej prezentacji do odhaczenia.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== USŁUGI ========== -->
 <section id="uslugi">
   <div class="wrap">
-    <div class="section-head">
+    <div class="section-head reveal">
       <span class="status-tag green"><span class="dot"></span>usługi</span>
       <h2>Usługi</h2>
-      <p>Od codziennej obsługi bezpieczeństwa po audyt i doradztwo — jeden punkt kontaktu.</p>
+      <p>Od audytu i SZBI po wdrożenie i codzienną obsługę bezpieczeństwa — jeden punkt kontaktu.</p>
     </div>
-      <div class="card">
+    <div class="grid">
+      <article class="card amber reveal">
+        <div class="card-ic" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6l8-3z"/></svg>
+        </div>
+        <span class="tag">ISO 27001 · KSC</span>
+        <h3>Audyty i doradztwo bezpieczeństwa</h3>
+        <p>Audyt bezpieczeństwa pod kątem ISO 27001 i wymagań KSC, z oceną ryzyka i priorytetami działań.</p>
+        <ul class="deliver">
+          <li>Analiza luk (gap analysis)</li>
+          <li>Raport dla zarządu i IT</li>
+          <li>Plan naprawczy z priorytetami</li>
+        </ul>
+        <a href="#kontakt" class="card-link" data-topic="Audyt / ISO 27001">Zamów audyt →</a>
+      </article>
+      <article class="card amber reveal">
+        <div class="card-ic" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 7h8M8 11h8M8 15h5"/></svg>
+        </div>
+        <span class="tag">SZBI</span>
+        <h3>System zarządzania bezpieczeństwem informacji</h3>
+        <p>Projekt i wdrożenie SZBI dopasowanego do firmy — narzędzie do codziennej pracy, nie segregator na półkę.</p>
+        <ul class="deliver">
+          <li>Polityki, procedury, analiza ryzyka</li>
+          <li>Zgodność z ISO 27001 i KSC</li>
+          <li>Utrzymanie i przeglądy</li>
+        </ul>
+        <a href="#szbi" class="card-link">Jak wdrażam SZBI →</a>
+      </article>
+      <article class="card reveal">
+        <div class="card-ic" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M2 8l10-5 10 5-10 5L2 8z"/><path d="M6 10v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/></svg>
+        </div>
+        <span class="tag">Edukacja</span>
+        <h3>Szkolenia i świadomość</h3>
+        <p>Szkolenia dopasowane do obowiązków pracowników i wymagań KSC — budują kulturę bezpieczeństwa.</p>
+        <ul class="deliver">
+          <li>Dla pracowników i kadry zarządzającej</li>
+          <li>Warsztaty techniczne dla IT</li>
+          <li>Zaświadczenia i materiały</li>
+        </ul>
+        <a href="#szkolenia" class="card-link">Program szkoleń →</a>
+      </article>
+      <article class="card reveal">
+        <div class="card-ic" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/><path d="M7 10l2 2-2 2M12 14h4"/></svg>
+        </div>
         <span class="tag">Wdrożenia</span>
         <h3>Konfiguracja i wdrażanie zabezpieczeń</h3>
-        <p>Konfiguracja, administracja oraz wdrażanie i integracja rozwiązań cyberbezpieczeństwa.</p>
+        <p>Wdrożenie i integracja rozwiązań — tak, żeby faktycznie chroniły, a nie tylko były. Także Microsoft 365 i Azure.</p>
+        <ul class="deliver">
+          <li>EDR / XDR, firewall NGFW</li>
+          <li>SIEM / SOAR, integracje</li>
+          <li>M365 / Azure, MFA, hardening</li>
+        </ul>
+        <a href="#kontakt" class="card-link" data-topic="Wdrożenie zabezpieczeń">Porozmawiajmy →</a>
+      </article>
+      <article class="card reveal">
+        <div class="card-ic" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-5-5"/><path d="M8 11h6M11 8v6"/></svg>
+        </div>
+        <span class="tag">Security Operations</span>
+        <h3>Monitoring, detekcja i reagowanie</h3>
+        <p>Reguły detekcji, threat hunting oraz obsługa incydentów — z procedurą zgłaszania zgodną z KSC.</p>
+        <ul class="deliver">
+          <li>Detection engineering</li>
+          <li>Threat hunting</li>
+          <li>Incident response</li>
+        </ul>
+        <a href="incydent.html" class="card-link">Zgłoś incydent →</a>
+      </article>
+      <article class="card reveal">
+        <div class="card-ic" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 9v4M12 17h.01"/><path d="M10.3 3.9L2 18a2 2 0 001.7 3h16.6a2 2 0 001.7-3L13.7 3.9a2 2 0 00-3.4 0z"/></svg>
+        </div>
+        <span class="tag">Podatności</span>
+        <h3>Zarządzanie podatnościami i ekspozycją</h3>
+        <p>Regularne skanowanie, ocena ryzyka i plan łatania uporządkowany według realnego zagrożenia.</p>
+        <ul class="deliver">
+          <li>Skanowanie i priorytetyzacja</li>
+          <li>Attack surface management</li>
+          <li>Raporty dla zarządu i IT</li>
+        </ul>
+        <a href="#kontakt" class="card-link" data-topic="Podatności">Porozmawiajmy →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SZBI ========== -->
+<section id="szbi" class="feature">
+  <div class="wrap feature-layout">
+    <div class="feature-copy reveal">
+      <span class="status-tag amber"><span class="dot"></span>szbi</span>
+      <h2>SZBI, który działa na co dzień — nie tylko na papierze</h2>
+      <p class="feature-lead">System zarządzania bezpieczeństwem informacji to fundament ISO 27001 i obowiązek podmiotów objętych nową ustawą o KSC. Projektuję go pod realia Twojej firmy: tak, żeby ludzie wiedzieli, co robić, a zarząd — gdzie jest ryzyko.</p>
+      <ul class="ticks">
+        <li>Zakres dopasowany do wielkości i branży — bez zbędnej biurokracji</li>
+        <li>Zgodność z ISO/IEC 27001 i wymaganiami KSC w jednym systemie</li>
+        <li>Dokumenty, które zespół faktycznie rozumie i stosuje</li>
+        <li>Przygotowanie do audytu KSC lub certyfikacji ISO 27001</li>
+      </ul>
+      <a href="#kontakt" class="btn btn-primary" data-topic="SZBI">Porozmawiajmy o SZBI</a>
+    </div>
+    <div class="szbi-panel reveal" aria-label="Elementy SZBI">
+      <div class="panel-head"><span class="mono-label">szbi/</span><span class="mono-label dim">PDCA</span></div>
+      <ol class="szbi-steps">
+        <li><span class="sn">01</span><div><strong>Kontekst i zakres</strong><p>Inwentaryzacja aktywów, procesów i wymagań prawnych.</p></div></li>
+        <li><span class="sn">02</span><div><strong>Analiza ryzyka</strong><p>Szacowanie ryzyka i plan postępowania z ryzykiem.</p></div></li>
+        <li><span class="sn">03</span><div><strong>Polityki i procedury</strong><p>Polityka bezpieczeństwa, deklaracja stosowania (SoA), zarządzanie incydentami, ciągłość działania.</p></div></li>
+        <li><span class="sn">04</span><div><strong>Wdrożenie i szkolenia</strong><p>Wprowadzenie zabezpieczeń i przeszkolenie zespołu.</p></div></li>
+        <li><span class="sn">05</span><div><strong>Audyt wewnętrzny i przegląd</strong><p>Weryfikacja skuteczności i ciągłe doskonalenie.</p></div></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SZKOLENIA ========== -->
+<section id="szkolenia" class="feature">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="status-tag green"><span class="dot"></span>szkolenia i świadomość</span>
+      <h2>Ludzie to pierwsza linia obrony</h2>
+      <p>Większość incydentów zaczyna się od człowieka — kliknięcia w link, słabego hasła, przekazanych danych. Szkolenia dopasowuję do roli uczestników i wymagań KSC, żeby budowały nawyki, a nie tylko listę obecności.</p>
+    </div>
+    <div class="train-grid">
+      <div class="train reveal">
+        <div class="train-who">Pracownicy</div>
+        <h3>Świadomość zagrożeń</h3>
+        <ul>
+          <li>Phishing, socjotechnika i oszustwa „na prezesa”</li>
+          <li>Hasła, MFA i bezpieczna praca zdalna</li>
+          <li>Jak i komu zgłosić incydent</li>
+        </ul>
       </div>
-      <div class="card amber">
-        <span class="tag">ISO 27001</span>
-        <h3>Audyty i doradztwo bezpieczeństwa</h3>
-        <p>Audyty bezpieczeństwa, w tym pod kątem ISO 27001, wraz z rekomendacjami i wsparciem eksperckim.</p>
+      <div class="train reveal">
+        <div class="train-who">Zarząd i kadra kierownicza</div>
+        <h3>Cyberbezpieczeństwo dla kierownictwa</h3>
+        <ul>
+          <li>Obowiązki i odpowiedzialność wg KSC / NIS2</li>
+          <li>Zarządzanie ryzykiem i decyzje budżetowe</li>
+          <li>Rola kierownictwa w czasie incydentu</li>
+        </ul>
       </div>
-      <div class="card">
-        <span class="tag">Edukacja</span>
-        <h3>Szkolenia i warsztaty</h3>
-        <p>Szkolenia z cyberbezpieczeństwa dopasowane do poziomu zespołu.</p>
+      <div class="train reveal">
+        <div class="train-who">Zespoły IT</div>
+        <h3>Warsztaty techniczne</h3>
+        <ul>
+          <li>Detekcja i reagowanie (SIEM, EDR/XDR)</li>
+          <li>Hardening M365, Azure i stacji roboczych</li>
+          <li>Zarządzanie podatnościami w praktyce</li>
+        </ul>
+      </div>
+    </div>
+    <div class="train-foot reveal">
+      <div class="train-formats">
+        <span class="cert-chip">Online lub stacjonarnie</span>
+        <span class="cert-chip">Program pod Twój zespół</span>
+        <span class="cert-chip">Materiały po szkoleniu</span>
+        <span class="cert-chip">Potwierdzenie udziału</span>
+      </div>
+      <a href="#kontakt" class="btn btn-ghost" data-topic="Szkolenia">Zapytaj o szkolenie →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ========== KSC / NIS2 ========== -->
+<section id="ksc">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="status-tag amber"><span class="dot pulse"></span>ksc / nis2</span>
+      <h2>Nowa ustawa o KSC już obowiązuje</h2>
+      <p>Nowelizacja ustawy o krajowym systemie cyberbezpieczeństwa wdraża dyrektywę NIS2 i obejmuje tysiące nowych firm i instytucji. Za wykonanie obowiązków odpowiada osobiście kierownik podmiotu.</p>
+    </div>
+
+    <div class="timeline reveal" role="list">
+      <div class="tl-item done" role="listitem">
+        <div class="tl-date">3 kwi 2026</div>
+        <div class="tl-what">Ustawa wchodzi w życie</div>
+      </div>
+      <div class="tl-item done" role="listitem">
+        <div class="tl-date">3 paź 2026</div>
+        <div class="tl-what">Wniosek o wpis do wykazu podmiotów kluczowych i ważnych</div>
+      </div>
+      <div class="tl-item next" role="listitem">
+        <div class="tl-date">3 kwi 2027</div>
+        <div class="tl-what">Wdrożony SZBI i podłączenie do systemu S46</div>
+      </div>
+      <div class="tl-item" role="listitem">
+        <div class="tl-date">3 kwi 2028</div>
+        <div class="tl-what">Pierwszy audyt bezpieczeństwa, potem co 3 lata</div>
+      </div>
+    </div>
+
+    <div class="ksc-layout">
+      <div class="ksc-duties reveal">
+        <h3>Co musi zrobić podmiot kluczowy lub ważny</h3>
+        <ul class="ticks">
+          <li>Wdrożyć system zarządzania bezpieczeństwem informacji (SZBI)</li>
+          <li>Szacować ryzyko i stosować adekwatne środki techniczne i organizacyjne</li>
+          <li>Zgłaszać poważne incydenty do właściwego CSIRT — wczesne ostrzeżenie w 24 h, zgłoszenie w 72 h</li>
+          <li>Zadbać o bezpieczeństwo łańcucha dostaw</li>
+          <li>Szkolić pracowników i kierownictwo</li>
+          <li>Przeprowadzać regularne audyty bezpieczeństwa</li>
+        </ul>
+        <h3 class="ksc-sub">Jak mogę pomóc</h3>
+        <div class="ksc-help">
+          <a href="#kontakt" data-topic="KSC / NIS2" class="ksc-chip"><strong>Analiza luk KSC</strong><span>Gdzie jesteś, czego brakuje, co najpierw</span></a>
+          <a href="#szbi" class="ksc-chip"><strong>Wdrożenie SZBI</strong><span>Polityki, ryzyko, procedury</span></a>
+          <a href="#kontakt" data-topic="KSC / NIS2" class="ksc-chip"><strong>Procedura incydentów</strong><span>Kto, co i kiedy zgłasza</span></a>
+          <a href="#szkolenia" class="ksc-chip"><strong>Szkolenia KSC</strong><span>Dla zarządu i pracowników</span></a>
+        </div>
+      </div>
+
+      <!-- KSC self-check -->
+      <div class="ksc-check reveal" id="ksc-check">
+        <div class="panel-head"><span class="mono-label">ksc-check</span><span class="mono-label dim">3 pytania</span></div>
+        <form class="check-form" novalidate>
+          <fieldset>
+            <legend>1. W jakim sektorze działa Twoja organizacja?</legend>
+            <select name="sector" aria-label="Sektor">
+              <option value="">— wybierz —</option>
+              <optgroup label="Sektory kluczowe">
+                <option value="key">Energetyka (prąd, gaz, ciepło, paliwa, wodór)</option>
+                <option value="key">Transport (lotniczy, kolejowy, wodny, drogowy)</option>
+                <option value="key">Bankowość i infrastruktura rynków finansowych</option>
+                <option value="key">Ochrona zdrowia</option>
+                <option value="key">Woda pitna i ścieki</option>
+                <option value="key">Usługi ICT zarządzane (MSP / MSSP)</option>
+                <option value="key">Infrastruktura cyfrowa (chmura, centra danych, CDN)</option>
+              </optgroup>
+              <optgroup label="Zawsze objęte, niezależnie od wielkości">
+                <option value="always">Administracja publiczna</option>
+                <option value="always">DNS, rejestry TLD, usługi zaufania, sieci telekomunikacyjne</option>
+              </optgroup>
+              <optgroup label="Sektory ważne">
+                <option value="important">Produkcja (m.in. elektronika, maszyny, pojazdy, wyroby medyczne)</option>
+                <option value="important">Żywność — produkcja, przetwarzanie, dystrybucja</option>
+                <option value="important">Chemikalia</option>
+                <option value="important">Gospodarowanie odpadami</option>
+                <option value="important">Usługi pocztowe i kurierskie</option>
+                <option value="important">Dostawcy cyfrowi (e-commerce, wyszukiwarki, social media)</option>
+                <option value="important">Badania naukowe</option>
+              </optgroup>
+              <option value="other">Inny sektor</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <legend>2. Jaka jest wielkość organizacji?</legend>
+            <label class="radio"><input type="radio" name="size" value="big"> 50+ pracowników lub ponad 10 mln € obrotu</label>
+            <label class="radio"><input type="radio" name="size" value="small"> Mniej niż 50 pracowników i do 10 mln € obrotu</label>
+          </fieldset>
+          <fieldset>
+            <legend>3. Czy świadczysz usługi dla firm z sektorów powyżej?</legend>
+            <label class="radio"><input type="radio" name="supplier" value="yes"> Tak, jestem ich dostawcą</label>
+            <label class="radio"><input type="radio" name="supplier" value="no"> Nie</label>
+          </fieldset>
+          <button type="submit" class="btn btn-primary btn-block">Sprawdź</button>
+        </form>
+        <div class="check-result" hidden aria-live="polite"></div>
+        <p class="check-note">Wynik orientacyjny — nie zastępuje analizy prawnej. Ostateczna kwalifikacja zależy m.in. od zakresu działalności i powiązań kapitałowych.</p>
       </div>
     </div>
   </div>
 </section>
 
+<!-- ========== PROCES ========== -->
+<section id="proces">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="status-tag green"><span class="dot"></span>proces</span>
+      <h2>Jak wygląda współpraca</h2>
+      <p>Przejrzyście od pierwszej rozmowy — wiesz, co dostaniesz, kiedy i za ile.</p>
+    </div>
+    <ol class="steps">
+      <li class="step reveal">
+        <div class="step-num">01</div>
+        <h3>Rozmowa</h3>
+        <p>Krótka, bezpłatna konsultacja: poznaję Twoje środowisko, cele i ograniczenia.</p>
+      </li>
+      <li class="step reveal">
+        <div class="step-num">02</div>
+        <h3>Zakres i wycena</h3>
+        <p>Dostajesz propozycję zakresu, harmonogram i stałą wycenę — bez ukrytych kosztów.</p>
+      </li>
+      <li class="step reveal">
+        <div class="step-num">03</div>
+        <h3>Realizacja</h3>
+        <p>Audyt, wdrożenie lub szkolenie z bieżącym kontaktem i informacją o postępach.</p>
+      </li>
+      <li class="step reveal">
+        <div class="step-num">04</div>
+        <h3>Raport i dalsze wsparcie</h3>
+        <p>Jasny raport z priorytetami. Możesz kontynuować współpracę projektowo lub na stałe.</p>
+      </li>
+    </ol>
+
+    <div class="why">
+      <div class="why-item reveal"><h4>Bezpośrednio z ekspertem</h4><p>Bez pośredników i przekazywania projektu juniorom.</p></div>
+      <div class="why-item reveal"><h4>Raport dla zarządu i dla IT</h4><p>Wnioski biznesowe i szczegóły techniczne w jednym dokumencie.</p></div>
+      <div class="why-item reveal"><h4>Poufność od początku</h4><p>NDA przed rozpoczęciem prac i bezpieczne przekazywanie danych.</p></div>
+      <div class="why-item reveal"><h4>Uznane standardy</h4><p>ISO 27001, NIST CSF, CIS Controls — a nie autorskie checklisty.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== O MNIE ========== -->
 <section id="o-mnie">
   <div class="wrap">
-    <div class="section-head">
+    <div class="section-head reveal">
       <span class="status-tag green"><span class="dot"></span>founder</span>
-      <h2>O założycielu</h2>
+      <h2>Kto stoi za Vireston</h2>
     </div>
 
     <div class="founder">
-      <div class="founder-photo">
-        <img src="img/profile/author-imagee2.jpeg" alt="Olek Danczewski">
+      <div class="founder-side reveal">
+        <div class="founder-photo">
+          <img src="img/profile/author-imagee2.jpeg" alt="Olek Danczewski — założyciel Vireston" width="1200" height="1600" loading="lazy">
+        </div>
+        <div class="stats">
+          <div class="stat"><div class="stat-num">45+</div><div class="stat-label">certyfikatów i szkoleń</div></div>
+          <div class="stat"><div class="stat-num">10</div><div class="stat-label">platform bezpieczeństwa</div></div>
+        </div>
+        <a href="https://www.linkedin.com/in/danczewski/" target="_blank" rel="noopener" class="btn btn-ghost btn-block li-btn"><svg aria-hidden="true"><use href="#i-linkedin"/></svg>Obserwuj na LinkedIn</a>
       </div>
 
-      <div>
+      <div class="founder-body reveal">
         <h3>Olek Danczewski</h3>
+        <div class="role">Założyciel Vireston · Audytor ISO/IEC 27001</div>
 
-        <div class="role">
-          Założyciel Vireston · Audytor ISO 27001
+        <p class="bio">Pomagam firmom wykrywać zagrożenia i na nie reagować, a także utrzymać porządek i zgodność w zabezpieczeniach. Łączę perspektywę audytora z praktyką inżyniera — wiem, jak wymagania normy i ustawy przełożyć na konkretną konfigurację systemów.</p>
+        <p class="bio">Pracujesz bezpośrednio ze mną: bez pośredników, bez przekazywania projektu juniorom. Po godzinach — góry, bieganie i boks. Z gór wziąłem zasadę, która przyświeca też Vireston: zagrożenie najlepiej widać z wysoka i z wyprzedzeniem.</p>
+
+        <div class="creds">
+          <div class="cred"><span class="cred-k">Wykształcenie</span><span class="cred-v">mgr inż. — Cyberbezpieczeństwo i technologie chmurowe, Politechnika Rzeszowska</span></div>
+          <div class="cred"><span class="cred-k">Członkostwa</span><span class="cred-v">(ISC)² Poland Chapter · ISSA Polska · Microsoft Azure User Group Poland</span></div>
         </div>
 
-        <p class="bio">
-          Pomagam firmom wykrywać i reagować na zagrożenia oraz utrzymać porządek
-          i zgodność w zabezpieczeniach.
-        </p>
+        <h4 class="mini-head">Kluczowe certyfikaty</h4>
+        <div class="badge-grid">
+          <a class="badge" href="pdf/ISO27001.pdf" target="_blank" rel="noopener"><span class="b-org">ISO/IEC</span><span class="b-name">27001 Lead Auditor</span></a>
+          <a class="badge" href="pdf/CompTIA%20Security+%20(SY0-701).pdf" target="_blank" rel="noopener"><span class="b-org">CompTIA</span><span class="b-name">Security+</span></a>
+          <a class="badge" href="pdf/CompTIA%20CySA+.pdf" target="_blank" rel="noopener"><span class="b-org">CompTIA</span><span class="b-name">CySA+</span></a>
+          <a class="badge" href="pdf/CRTA-Oleh-Danchivskyi.pdf" target="_blank" rel="noopener"><span class="b-org">CyberWarFare Labs</span><span class="b-name">Red Team Analyst (CRTA)</span></a>
+          <a class="badge" href="pdf/Microsoft%20Certified-SC-100.pdf" target="_blank" rel="noopener"><span class="b-org">Microsoft</span><span class="b-name">SC-100 Cybersecurity Architect</span></a>
+          <a class="badge" href="pdf/Certyfikat%20SC-200.pdf" target="_blank" rel="noopener"><span class="b-org">Microsoft</span><span class="b-name">SC-200 Security Operations</span></a>
+          <a class="badge" href="pdf/Certyfikat%20AZ-500.pdf" target="_blank" rel="noopener"><span class="b-org">Microsoft</span><span class="b-name">AZ-500 Azure Security</span></a>
+          <a class="badge" href="pdf/TrendAI%20Vision%20One%20Security%20Operations%20Practitioner.pdf" target="_blank" rel="noopener"><span class="b-org">Trend Micro</span><span class="b-name">Vision One SecOps</span></a>
+        </div>
+        <a href="certyfikaty.html" class="portfolio-link">Zobacz wszystkie certyfikaty →</a>
 
-        <!-- CERTYFIKATY -->
+        <h4 class="mini-head">Obszary specjalizacji</h4>
         <div class="cert-list">
-          <span class="cert-chip">ISO 27001</span>
-          <span class="cert-chip">CompTIA Security+</span>
-          <span class="cert-chip">CompTIA CySA+</span>
-          <span class="cert-chip">Microsoft SC-200</span>
-          <span class="cert-chip">Microsoft SC-100</span>
-          <span class="cert-chip">Microsoft AZ-500</span>
-          <span class="cert-chip">Trend Vision One — Security Operations</span>
-          <span class="cert-chip">Certified Red Team Analyst (CRTA)</span>
-        </div>
-
-        <a href="certyfikaty.html"
-           class="portfolio-link"
-           style="margin-bottom:30px; display:inline-flex;">
-          Zobacz wszystkie certyfikaty →
-        </a>
-
-
-        <h3 style="font-size:16px; margin-top:8px; margin-bottom:14px;">
-          Platformy i technologie bezpieczeństwa
-        </h3>
-
-        <div class="cert-list" style="margin-bottom:28px;">
-          <span class="cert-chip">Microsoft Security</span>
-          <span class="cert-chip">Fortinet</span>
-          <span class="cert-chip">Palo Alto Networks</span>
-          <span class="cert-chip">CrowdStrike</span>
-          <span class="cert-chip">Trend Micro</span>
-          <span class="cert-chip">TXOne Networks</span>
-          <span class="cert-chip">Splunk</span>
-          <span class="cert-chip">Tenable</span>
-          <span class="cert-chip">Rapid7</span>
-          <span class="cert-chip">Wazuh</span>
-        </div>
-
-
-        <!-- OBSZARY SPECJALIZACJI -->
-        <h3 style="font-size:16px; margin-top:8px; margin-bottom:14px;">
-          Obszary specjalizacji
-        </h3>
-
-        <div class="cert-list" style="margin-bottom:28px;">
           <span class="cert-chip">Security Operations</span>
           <span class="cert-chip">SIEM / SOAR</span>
           <span class="cert-chip">EDR / XDR</span>
@@ -155,78 +576,181 @@
           <span class="cert-chip">Security Automation</span>
           <span class="cert-chip">Security Architecture</span>
         </div>
-
-        <a href="#portfolio" class="portfolio-link">
-          Zobacz pełne portfolio →
-        </a>
       </div>
     </div>
   </div>
 </section>
 
+<!-- ========== PORTFOLIO ========== -->
 <section id="portfolio">
   <div class="wrap">
-    <div class="section-head">
+    <div class="section-head reveal">
       <span class="status-tag green"><span class="dot"></span>projects</span>
-      <h2>Portfolio / projekty techniczne</h2>
-      <p>Wybrane projekty inżynierskie i techniczne — pełna lista dostępna w osobnej zakładce.</p>
+      <h2>Projekty techniczne</h2>
+      <p>Wybrane projekty inżynierskie i techniczne — pełna lista w portfolio.</p>
     </div>
     <div class="proj-grid">
-      <div class="proj-card">
-        <div class="proj-thumb">cybersecurity-tasks/</div>
+      <a class="proj-card reveal" href="https://danchivskyi.github.io/Portfolio/#4" target="_blank" rel="noopener">
+        <div class="proj-thumb"><span>~/cybersecurity-tasks</span></div>
         <div class="proj-body"><h3>Cybersecurity Tasks</h3><p>Zbiór praktycznych zadań i ćwiczeń z zakresu bezpieczeństwa.</p></div>
-      </div>
-      <div class="proj-card">
-        <div class="proj-thumb">projekt-inzynierski/</div>
+      </a>
+      <a class="proj-card reveal" href="https://danchivskyi.github.io/Portfolio/#4" target="_blank" rel="noopener">
+        <div class="proj-thumb"><span>~/projekt-inzynierski</span></div>
         <div class="proj-body"><h3>Projekt inżynierski</h3><p>Praca dyplomowa inżynierska z zakresu IT.</p></div>
-      </div>
-      <div class="proj-card">
-        <div class="proj-thumb">aplikacja-web/</div>
+      </a>
+      <a class="proj-card reveal" href="https://danchivskyi.github.io/Portfolio/#4" target="_blank" rel="noopener">
+        <div class="proj-thumb"><span>~/aplikacja-web</span></div>
         <div class="proj-body"><h3>Aplikacja internetowa</h3><p>Projekt frontendowy demonstrujący umiejętności webowe.</p></div>
-      </div>
+      </a>
     </div>
-    <div style="margin-top:32px;">
-      <a href="https://danchivskyi.github.io/Portfolio/#4" class="btn btn-ghost">Zobacz całe portfolio →</a>
+    <div class="center-cta">
+      <a href="https://danchivskyi.github.io/Portfolio/#4" class="btn btn-ghost" target="_blank" rel="noopener">Zobacz całe portfolio →</a>
     </div>
   </div>
 </section>
 
-<section id="kontakt" style="border-bottom:none;">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="status-tag amber"><span class="dot"></span>get in touch</span>
-      <h2>Porozmawiajmy o bezpieczeństwie Twojej firmy</h2>
-      <p>Napisz kilka słów o wyzwaniu, z jakim się mierzysz — odpowiadam w ciągu 1–2 dni roboczych.</p>
+<!-- ========== FAQ ========== -->
+<section id="faq">
+  <div class="wrap faq-layout">
+    <div class="section-head reveal">
+      <span class="status-tag green"><span class="dot"></span>faq</span>
+      <h2>Częste pytania</h2>
+      <p>Nie ma tu odpowiedzi na Twoje pytanie? <a href="#kontakt" class="inline-link">Napisz</a> — odpowiem bezpośrednio.</p>
     </div>
-    <div class="contact-grid">
-      <form action="https://formspree.io/f/xjybdopk" method="POST">
-        <div class="field"><label>Imię i nazwisko / firma</label><input type="text" name="name" placeholder="Jan Kowalski, Firma Sp. z o.o." required></div>
-        <div class="field"><label>E-mail</label><input type="email" name="email" placeholder="jan@firma.pl" required></div>
-        <div class="field"><label>Telefon</label><input type="tel" name="phone" placeholder="123 456 789" required></div>
-        <div class="field"><label>Wiadomość</label><textarea name="message" placeholder="Opisz krótko, czego potrzebujesz..." required></textarea></div>
-        <button type="submit" class="btn btn-primary" style="border:none; cursor:pointer;">Wyślij wiadomość</button>
-      </form>
-      <div class="contact-info">
-        <div class="row"><div class="k">Firma</div><div class="v">Vireston</div></div>
-        <div class="row"><div class="k">Model</div><div class="v">Współpraca B2B</div></div>
-        <!-- <div class="row"><div class="k">E-mail</div><div class="v"><a href="mailto:kontakt@vireston.pl">kontakt@vireston.pl</a></div></div>-->
-        <div class="row"><div class="k">LinkedIn</div><div class="v"><a href="#">linkedin.com/in/danczewski</a></div></div>
-      </div>
+    <div class="faq-list reveal">
+      <details>
+        <summary>Czy moja firma podlega nowej ustawie o KSC?</summary>
+        <p>Ustawa obejmuje podmioty kluczowe i ważne z sektorów wymienionych w jej załącznikach — zwykle średnie i duże firmy (od 50 osób lub powyżej 10 mln euro obrotu), a w niektórych sektorach niezależnie od wielkości. Obowiązek ustalenia, czy ustawa Cię dotyczy, spoczywa na samej firmie. Szybki test znajdziesz <a href="#ksc-check" class="inline-link">wyżej</a>, a dokładną kwalifikację mogę przeprowadzić w ramach analizy luk.</p>
+      </details>
+      <details>
+        <summary>Czym jest SZBI i czy muszę mieć certyfikat ISO 27001?</summary>
+        <p>SZBI to system zarządzania bezpieczeństwem informacji: polityki, analiza ryzyka, procedury i nadzór nad nimi. Ustawa o KSC wymaga jego wdrożenia, ale nie wymaga certyfikatu ISO 27001. Norma jest jednak najlepszym wzorcem — SZBI zbudowany zgodnie z nią spełnia wymagania ustawy i ułatwia późniejszą certyfikację.</p>
+      </details>
+      <details>
+        <summary>Mamy incydent — co robić?</summary>
+        <p>Nie wyłączaj zainfekowanych komputerów, tylko odłącz je od sieci, i zachowaj logi. Skorzystaj ze <a href="incydent.html" class="inline-link">zgłoszenia incydentu</a> — znajdziesz tam też listę pierwszych kroków. Jeśli podlegasz KSC, pamiętaj o wczesnym ostrzeżeniu do CSIRT w ciągu 24 godzin.</p>
+      </details>
+      <details>
+        <summary>Ile kosztuje współpraca?</summary>
+        <p>Każdy projekt wyceniam indywidualnie, bo zależy od wielkości środowiska i zakresu. Po pierwszej rozmowie dostajesz konkretną, stałą wycenę — bez niespodzianek na fakturze.</p>
+      </details>
+      <details>
+        <summary>Dla jakich firm pracujesz?</summary>
+        <p>Głównie dla małych i średnich firm oraz instytucji, które nie mają własnego działu bezpieczeństwa lub potrzebują wsparcia eksperta przy konkretnym projekcie — audycie, SZBI, wdrożeniu czy przygotowaniu do KSC.</p>
+      </details>
+      <details>
+        <summary>Czy pracujesz zdalnie?</summary>
+        <p>Tak, większość prac można zrealizować zdalnie. Jeśli projekt tego wymaga (np. szkolenie stacjonarne lub audyt na miejscu), możemy umówić się na pracę u Ciebie.</p>
+      </details>
+      <details>
+        <summary>Jak dbasz o poufność danych firmy?</summary>
+        <p>Wszystkie informacje o Twoim środowisku traktuję jako poufne. Przed rozpoczęciem prac podpisujemy umowę o zachowaniu poufności (NDA), a dane przekazujemy wyłącznie bezpiecznymi kanałami.</p>
+      </details>
     </div>
   </div>
 </section>
+
+<!-- ========== KONTAKT ========== -->
+<section id="kontakt" class="contact-section">
+  <div class="wrap">
+    <div class="contact-card reveal">
+      <div class="contact-intro">
+        <span class="status-tag amber"><span class="dot"></span>zamów ocenę</span>
+        <h2>Zacznijmy od rozmowy, nie od oferty handlowej</h2>
+        <p>Napisz kilka słów o wyzwaniu, z jakim się mierzysz. Odpowiadam w ciągu 1–2 dni roboczych i uczciwie powiem, czy mogę pomóc.</p>
+
+        <ol class="next-steps">
+          <li><span>1</span>Wysyłasz wiadomość</li>
+          <li><span>2</span>Umawiamy krótką rozmowę</li>
+          <li><span>3</span>Dostajesz propozycję zakresu i wycenę</li>
+        </ol>
+
+        <div class="contact-info">
+          <div class="row"><div class="k">Firma</div><div class="v">Vireston</div></div>
+          <div class="row"><div class="k">Rozliczenie</div><div class="v">Faktura VAT · projektowo lub w stałym wsparciu</div></div>
+          <!-- <div class="row"><div class="k">E-mail</div><div class="v"><a href="mailto:kontakt@vireston.pl">kontakt@vireston.pl</a></div></div> -->
+          <div class="row"><div class="k">LinkedIn</div><div class="v"><a href="https://www.linkedin.com/in/danczewski/" target="_blank" rel="noopener">linkedin.com/in/danczewski</a></div></div>
+        </div>
+
+        <a href="incydent.html" class="incident-box">
+          <span class="dot pulse"></span>
+          <span><strong>Trwa incydent?</strong> Nie czekaj na odpowiedź z formularza — skorzystaj ze zgłoszenia incydentu.</span>
+          <span aria-hidden="true">→</span>
+        </a>
+      </div>
+
+      <form id="contact-form" action="https://formspree.io/f/xjybdopk" method="POST" novalidate>
+        <div class="field-row">
+          <div class="field"><label for="f-name">Imię i nazwisko / firma *</label><input id="f-name" type="text" name="name" placeholder="Jan Kowalski, Firma Sp. z o.o." autocomplete="name" required></div>
+          <div class="field"><label for="f-email">E-mail *</label><input id="f-email" type="email" name="email" placeholder="jan@firma.pl" autocomplete="email" required></div>
+        </div>
+        <div class="field-row">
+          <div class="field"><label for="f-phone">Telefon</label><input id="f-phone" type="tel" name="phone" placeholder="123 456 789" autocomplete="tel"></div>
+          <div class="field"><label for="f-topic">Czego dotyczy?</label>
+            <select id="f-topic" name="topic">
+              <option>Ocena bezpieczeństwa</option>
+              <option>Audyt / ISO 27001</option>
+              <option>SZBI</option>
+              <option>KSC / NIS2</option>
+              <option>Wdrożenie zabezpieczeń</option>
+              <option>Monitoring i reagowanie</option>
+              <option>Podatności</option>
+              <option>Szkolenia</option>
+              <option>Inne</option>
+            </select>
+          </div>
+        </div>
+        <div class="field"><label for="f-msg">Wiadomość *</label><textarea id="f-msg" name="message" placeholder="Opisz krótko, czego potrzebujesz — np. wielkość firmy, branża, termin…" required></textarea></div>
+        <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <button type="submit" class="btn btn-primary btn-block">Wyślij wiadomość</button>
+        <p class="form-note">Twoje dane wykorzystam wyłącznie do odpowiedzi na wiadomość.</p>
+        <div class="form-status" role="status" aria-live="polite"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
 
 <footer>
-  <div class="wrap foot-row">
-    <div>© 2026 Vireston. Wszystkie prawa zastrzeżone.</div>
-    <div class="foot-links">
-      <a href="index.html">Strona główna</a>
-      <a href="certyfikaty.html">Certyfikaty</a>
-      <a href="portfolio.html">Portfolio</a>
-      <a href="#kontakt">Kontakt</a>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a href="index.html" class="logo"><svg class="logo-mark" aria-hidden="true"><use href="#vlogo"/></svg>VIRESTON</a>
+        <p class="foot-tag">Cyberbezpieczeństwo, SZBI i KSC/NIS2 dla firm i instytucji.</p>
+        <a href="https://www.linkedin.com/in/danczewski/" target="_blank" rel="noopener" class="foot-li"><svg aria-hidden="true"><use href="#i-linkedin"/></svg>LinkedIn</a>
+      </div>
+      <div class="foot-col">
+        <h4>Usługi</h4>
+        <a href="#uslugi">Audyty ISO 27001</a>
+        <a href="#szbi">SZBI</a>
+        <a href="#ksc">KSC / NIS2</a>
+        <a href="#szkolenia">Szkolenia i świadomość</a>
+        <a href="#uslugi">Wdrożenia i SecOps</a>
+      </div>
+      <div class="foot-col">
+        <h4>Strona</h4>
+        <a href="#o-mnie">O mnie</a>
+        <a href="certyfikaty.html">Certyfikaty</a>
+        <a href="https://danchivskyi.github.io/Portfolio/#4" target="_blank" rel="noopener">Portfolio</a>
+        <a href="#faq">FAQ</a>
+        <a href="#kontakt">Kontakt</a>
+      </div>
+      <div class="foot-col">
+        <h4>Przydatne</h4>
+        <a href="incydent.html" class="foot-incident">Zgłoś incydent</a>
+        <a href="https://incydent.cert.pl/" target="_blank" rel="noopener">CERT Polska — zgłoszenia</a>
+        <a href="https://moje.cert.pl/" target="_blank" rel="noopener">moje.cert.pl</a>
+        <a href="https://www.gov.pl/web/baza-wiedzy" target="_blank" rel="noopener">Baza wiedzy gov.pl</a>
+      </div>
+    </div>
+    <div class="foot-row">
+      <div>© <span class="year">2026</span> Vireston. Wszystkie prawa zastrzeżone.</div>
+      <a href="#main" class="to-top">Do góry ↑</a>
     </div>
   </div>
 </footer>
 
+<script src="js/main.js" defer></script>
 </body>
 </html>
