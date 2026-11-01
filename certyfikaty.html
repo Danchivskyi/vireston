@@ -18,7 +18,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style.css?v=2026-11-01">
 <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
@@ -39,16 +39,21 @@
 <header class="site-header">
   <div class="wrap">
     <nav aria-label="Główna nawigacja">
-      <a href="index.html" class="logo"><svg class="logo-mark" aria-hidden="true"><use href="#vlogo"/></svg>VIRESTON</a>
+      <a href="index.html" class="logo" aria-label="Vireston — strona główna"><svg class="logo-mark" aria-hidden="true"><use href="#vlogo"/></svg>VIRESTON</a>
       <div class="navlinks" id="navlinks">
         <a href="index.html#uslugi">Usługi</a>
-        <a href="index.html#proces">Jak pracuję</a>
+        <a href="index.html#ksc">KSC / NIS2</a>
         <a href="index.html#o-mnie">O mnie</a>
         <a href="certyfikaty.html" class="active" aria-current="page">Certyfikaty</a>
         <a href="index.html#faq">FAQ</a>
-        <a href="index.html#kontakt" class="nav-cta-mobile">Umów konsultację →</a>
+        <a href="https://www.linkedin.com/company/vireston/" target="_blank" rel="noopener" class="nav-li" aria-label="Vireston na LinkedIn"><svg aria-hidden="true"><use href="#i-linkedin"/></svg><span>LinkedIn</span></a>
+        <a href="incydent.html" class="nav-incident-mobile"><span class="dot pulse"></span>Zgłoś incydent</a>
+        <a href="index.html#kontakt" class="nav-cta-mobile">Zamów ocenę bezpieczeństwa →</a>
       </div>
-      <a href="index.html#kontakt" class="nav-cta">Umów konsultację →</a>
+      <div class="nav-actions">
+        <a href="incydent.html" class="nav-incident"><span class="dot pulse"></span>Zgłoś incydent</a>
+        <a href="index.html#kontakt" class="nav-cta">Zamów ocenę →</a>
+      </div>
       <button class="burger" aria-label="Otwórz menu" aria-expanded="false" aria-controls="navlinks"><span></span><span></span><span></span></button>
     </nav>
   </div>
@@ -194,7 +199,8 @@
       <div>
         <a href="index.html" class="logo"><svg class="logo-mark" aria-hidden="true"><use href="#vlogo"/></svg>VIRESTON</a>
         <p class="foot-tag">Cyberbezpieczeństwo, SZBI i KSC/NIS2 dla firm i instytucji.</p>
-        <a href="https://www.linkedin.com/in/danczewski/" target="_blank" rel="noopener" class="foot-li"><svg aria-hidden="true"><use href="#i-linkedin"/></svg>LinkedIn</a>
+        <a href="mailto:kontakt@vireston.pl" class="foot-mail">kontakt@vireston.pl</a>
+        <a href="https://www.linkedin.com/company/vireston/" target="_blank" rel="noopener" class="foot-li"><svg aria-hidden="true"><use href="#i-linkedin"/></svg>LinkedIn</a>
       </div>
       <div class="foot-col">
         <h4>Usługi</h4>
@@ -219,6 +225,6 @@
   </div>
 </footer>
 
-<script src="js/main.js" defer></script>
+<script src="js/main.js?v=2026-11-01" defer></script>
 </body>
 </html>

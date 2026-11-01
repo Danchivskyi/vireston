@@ -585,7 +585,9 @@ footer{padding:56px 0 32px; border-top:1px solid var(--border); background:var(-
 .incident-box:hover{background:rgba(255,95,87,0.1);}
 
 /* ---------- FOOTER EXTRAS ---------- */
-.foot-li{display:inline-flex; align-items:center; gap:8px; margin-top:16px; font-size:14px; color:var(--text-dim);}
+.foot-mail{display:block; margin-top:14px; font-family:var(--mono); font-size:13px; color:var(--green);}
+.foot-mail:hover{text-decoration:underline;}
+.foot-li{display:inline-flex; align-items:center; gap:8px; margin-top:10px; font-size:14px; color:var(--text-dim);}
 .foot-li:hover{color:var(--text);}
 .foot-incident{color:var(--red) !important;}
 
